@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-for x in range(0, 10):
-    for y in range(x + 1, 10):
-        if x == 8 and y == 9:
-            print('89')
-        else:
-            print('{}{}, '.format(x, y), end='')
+
+for i in range(8):
+    for j in range(10):
+        if j <= i:
+            continue
+        print("{n:d}{m:d}".format(n=i, m=j), end=', ')
+print(89)
